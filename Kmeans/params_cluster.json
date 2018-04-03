@@ -1,0 +1,28 @@
+{       
+"dataset":
+{
+"type":".csv",
+ "prefix":"clickstream_clustering/daimler_kmean_analysis", 
+ "folder": "clickstream_clustering/", 
+ "outputfolder":"analysis_outputs/",
+ "outputbucket":"qadams",
+ "bucket": "daimler-phase1"}, 
+ "master_node": "local", 
+ "filters": [{"index": 369, 
+ "values": ["Registration"]},
+{
+"index": 370, 
+"values": ["Failed", 
+"Request Success"]}],
+"file": "output.csv", 
+"application_name":"event_count", 
+"datetype": "month", 
+"daterange": ["2016-01-01", "2017-05-05"],
+"unique": True,
+"session_time": [23], 
+"events": [369, 370],
+"session_id": [956, 957, 962],
+"update-id":"a123dedfgh"
+}
+
+
